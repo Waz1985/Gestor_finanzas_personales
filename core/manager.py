@@ -1,9 +1,5 @@
 from core.models import Category, Movement
-<<<<<<< HEAD
 from datetime import datetime
-=======
-
->>>>>>> 5ffba0d3c4643ecb282352d5bf2d92b6faa91972
 
 class Manager:
     def __init__(self):
@@ -50,7 +46,6 @@ class Manager:
 
 
     def balance(self):
-<<<<<<< HEAD
         return self.total_incomes() - self.total_expenses()
     
     def get_movements_between(self, start_date, end_date):
@@ -71,6 +66,3 @@ class Manager:
                 filtered.append(m)
 
         return filtered
-=======
-        return self.total_incomes() - self.total_expenses()
->>>>>>> 5ffba0d3c4643ecb282352d5bf2d92b6faa91972

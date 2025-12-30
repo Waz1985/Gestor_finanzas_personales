@@ -31,7 +31,6 @@ def create_main_window(table_data):
 
     layout = [
         [
-<<<<<<< HEAD
             sg.Text("Start-Date (YYYY-MM-DD)"), sg.Input(key="-START-DATE-"),
             sg.Text("End-Date (YYYY-MM-DD)"), sg.Input(key="-END-DATE-"),
         ],
@@ -41,8 +40,6 @@ def create_main_window(table_data):
 
         ],
         [
-=======
->>>>>>> 5ffba0d3c4643ecb282352d5bf2d92b6faa91972
             sg.Table(
                 values=table_data,
                 headings=headings,
@@ -65,10 +62,7 @@ def create_main_window(table_data):
             sg.Button("Add Category"),
             sg.Button("Add Expense"),
             sg.Button("Add Income"),
-<<<<<<< HEAD
             sg.Button("Export to CSV"),
-=======
->>>>>>> 5ffba0d3c4643ecb282352d5bf2d92b6faa91972
             sg.Button("Exit")
         ]
     ]
@@ -78,7 +72,6 @@ def create_main_window(table_data):
         layout,
         finalize=True
     )
-<<<<<<< HEAD
 
 def build_row_colors(movements, categories):
     colors = []
@@ -90,5 +83,3 @@ def build_row_colors(movements, categories):
             colors.append((index, color))
 
     return colors
-=======
->>>>>>> 5ffba0d3c4643ecb282352d5bf2d92b6faa91972

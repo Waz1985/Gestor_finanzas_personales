@@ -1,11 +1,7 @@
 import FreeSimpleGUI as sg
 
-<<<<<<< HEAD
 def event_add_expense(manager, create_movement_window, save_movements, MOVEMENTS_PATH, window, 
                     build_table_data, build_row_colors):
-=======
-def event_add_expense(manager, create_movement_window, save_movements, MOVEMENTS_PATH, window, build_table_data):
->>>>>>> 5ffba0d3c4643ecb282352d5bf2d92b6faa91972
     category_names = [c.name for c in manager.categories]
     mov_window = create_movement_window(category_names, "EXPENSE")
 
@@ -29,12 +25,8 @@ def event_add_expense(manager, create_movement_window, save_movements, MOVEMENTS
 
                 # 🔄 refrescar tabla
                 window["-TABLE-"].update(
-<<<<<<< HEAD
                     values = build_table_data(manager.movements),
                     row_colors = build_row_colors(manager.movements, manager.categories)
-=======
-                    values=build_table_data(manager.movements)
->>>>>>> 5ffba0d3c4643ecb282352d5bf2d92b6faa91972
                 )
 
                 break
@@ -44,12 +36,8 @@ def event_add_expense(manager, create_movement_window, save_movements, MOVEMENTS
 
     mov_window.close()
 
-<<<<<<< HEAD
 def event_add_income(manager, create_movement_window, save_movements, MOVEMENTS_PATH, window, 
                     build_table_data, build_row_colors):
-=======
-def event_add_income(manager, create_movement_window, save_movements, MOVEMENTS_PATH, window, build_table_data):
->>>>>>> 5ffba0d3c4643ecb282352d5bf2d92b6faa91972
     category_names = [c.name for c in manager.categories]
     mov_window = create_movement_window(category_names, "INCOME")
 
@@ -72,12 +60,8 @@ def event_add_income(manager, create_movement_window, save_movements, MOVEMENTS_
                 save_movements(MOVEMENTS_PATH, manager.movements)
 
                 window["-TABLE-"].update(
-<<<<<<< HEAD
                     values=build_table_data(manager.movements),
                     row_colors=build_row_colors(manager.movements, manager.categories)
-=======
-                    values=build_table_data(manager.movements)
->>>>>>> 5ffba0d3c4643ecb282352d5bf2d92b6faa91972
                 )
 
                 break
@@ -97,13 +81,9 @@ def event_add_category(manager, cat_window, Category, save_categories, CATEGORIE
         if cat_event == "Save":
             try:
                 name = cat_values["-CATEGORY-"]
-<<<<<<< HEAD
                 color = cat_values.get("-COLOR-INPUT-") or "#DDDDDD"
 
                 category = Category(name, color)
-=======
-                category = Category(name)
->>>>>>> 5ffba0d3c4643ecb282352d5bf2d92b6faa91972
                 manager.add_category(category)
 
                 save_categories(CATEGORIES_PATH, manager.categories)
@@ -113,7 +93,6 @@ def event_add_category(manager, cat_window, Category, save_categories, CATEGORIE
             except ValueError as e:
                 sg.popup_error(str(e))
 
-<<<<<<< HEAD
     cat_window.close()
 
 def event_filter_button(manager, values, window, build_table_data, build_row_colors):
@@ -151,6 +130,3 @@ def event_export_report(manager, export_report):
             sg.popup("Report exported successfully")
         except Exception as e:
             sg.popup_error(f"Error exporting file: {e}")
-=======
-    cat_window.close()
->>>>>>> 5ffba0d3c4643ecb282352d5bf2d92b6faa91972

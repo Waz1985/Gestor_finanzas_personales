@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from datetime import datetime, date as dt_date
 
 class Category:
@@ -8,23 +7,6 @@ class Category:
 
         self.name = name.strip()
         self.color = color
-=======
-from datetime import datetime
-
-class Category:
-    def __init__(self, name):
-        self.name = name
-
-        if not isinstance(name, str):
-            raise TypeError("The category name must be a String")
-        
-        clear_name = name.strip()
-
-        if not clear_name:
-            raise ValueError("The category name can't be empty")
-    
-        self.name = clear_name
->>>>>>> 5ffba0d3c4643ecb282352d5bf2d92b6faa91972
 
 class Movement:
     def __init__(self, date, title, amount, category, type):
@@ -32,7 +14,6 @@ class Movement:
         self.title = title.strip()
         self.category = category.strip()
         self.type = str(type).upper()
-<<<<<<< HEAD
 
         try:
             movement_date = datetime.strptime(date, "%Y-%m-%d").date()
@@ -43,8 +24,6 @@ class Movement:
             raise ValueError("Date cannot be in the future")
 
         self.date = date
-=======
->>>>>>> 5ffba0d3c4643ecb282352d5bf2d92b6faa91972
         
         if self.type not in ("INCOME", "EXPENSE"):
             raise ValueError("Type must be INCOME or EXPENSE")
