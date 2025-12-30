@@ -31,8 +31,10 @@ def create_main_window(table_data):
 
     layout = [
         [
-            sg.Text("Start-Date (YYYY-MM-DD)"), sg.Input(key="-START-DATE-"),
-            sg.Text("End-Date (YYYY-MM-DD)"), sg.Input(key="-END-DATE-"),
+            sg.Text("Start-Date (YYYY-MM-DD)"), sg.Input(key="-START-DATE-", size=(12, 1)), 
+                sg.CalendarButton("📅", target="-START-DATE-", format="%Y-%m-%d", close_when_date_chosen=True, no_titlebar=False),
+            sg.Text("End-Date (YYYY-MM-DD)"), sg.Input(key="-END-DATE-", size=(12, 1)), 
+                sg.CalendarButton("📅", target="-END-DATE-", format="%Y-%m-%d", close_when_date_chosen=True, no_titlebar=False),
         ],
         [
             sg.Button("Filter"),
