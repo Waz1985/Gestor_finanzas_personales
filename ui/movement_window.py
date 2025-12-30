@@ -1,0 +1,19 @@
+import FreeSimpleGUI as sg
+
+def create_movement_window(categories, movement_type):
+    layout = [
+        [sg.Text(f"Add {movement_type}")],
+        [sg.Text("Date (YYYY-MM-DD)"), sg.Input(key="-DATE-")],
+        [sg.Text("Title"), sg.Input(key="-TITLE-")],
+        [sg.Text("Amount"), sg.Input(key="-AMOUNT-")],
+        [sg.Text("Category"), sg.Combo(categories, key="-CATEGORY-", readonly=True)],
+        [sg.Button("Save"), sg.Button("Cancel")]
+    ]
+
+    return sg.Window(
+        f"Add {movement_type}",
+        layout,
+        modal=True,
+        finalize=True
+    )
+
