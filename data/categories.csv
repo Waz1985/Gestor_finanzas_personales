@@ -1,6 +1,15 @@
+<<<<<<< HEAD
 name,color
 Food,#00ff00
 Rent,#ff8040
 Dressing,#00ffff
 Car,#80ff80
 House_Expenses,#8080ff
+=======
+name
+Food
+Job
+Rent
+Car
+Clothing
+>>>>>>> 5ffba0d3c4643ecb282352d5bf2d92b6faa91972

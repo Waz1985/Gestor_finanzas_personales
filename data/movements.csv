@@ -1,4 +1,5 @@
 date,title,amount,category,type
+<<<<<<< HEAD
 2025-12-29,1st Payment,1500.0,Food,INCOME
 2025-12-29,Shopping,350.0,Dressing,EXPENSE
 2025-12-29,Rent,200.0,Rent,INCOME
@@ -6,3 +7,13 @@ date,title,amount,category,type
 2025-12-29,Electricity,85.0,House_Expenses,EXPENSE
 2025-08-20,Food,180.0,Food,EXPENSE
 2025-09-12,Rent,200.0,Rent,INCOME
+=======
+2025-01-01,Salary,1000.0,Job,INCOME
+2025-01-02,Lunch,10.0,Food,EXPENSE
+2025-12-26,Market,150.0,Food,EXPENSE
+2025-12-26,Rent,175.0,Job,INCOME
+2026-12-26,rent,150.0,Rent,EXPENSE
+2025-12-26,Dinner,60.0,Food,INCOME
+2025-12-26,Clothes,85.0,Clothing,EXPENSE
+2025-12-26,Car Washing,25.0,Car,EXPENSE
+>>>>>>> 5ffba0d3c4643ecb282352d5bf2d92b6faa91972
